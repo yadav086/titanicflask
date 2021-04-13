@@ -1,0 +1,27 @@
+body {
+   background-color: powderblue;
+    display: block;
+    margin: 1px;
+    }  
+
+.label_class{
+   width: 70px;
+   height: 20px;
+}
+
+select{
+       width: 100px;
+
+}
+ .text_input{
+      width: 93px;
+      height: 13px;
+ }
+button:{
+       margin-left: 50px;
+       background-color: #1c2023;
+       color: black;
+
+}
+ 
+	
