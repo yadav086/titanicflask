@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> This is titanic ship Predication page</title>
+
+	<link rel="stylesheet"  href="{{url_for('static',filename='style.css')}}">
+</head>
+<center>
+<body>
+	<form method="POST" action="{{url_for('get_titanic_data')}}">
+		<left><b>This is titanic dataset predication</b></left><br></br>
+		<table>
+			<tr>
+				<td class="label_class">Class</td>
+				<td>
+					<select name="pclass" id="pclass">
+			  		<option value="pclass1">1</option>
+			  		<option value="pclass2">2</option>
+			  		<option value="pclass3">3</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td class="label_sex">Sex</td>
+				<td>
+					<select name="sex" id="sex">
+				  		<option value="M">Male</option>
+				  		<option value="F">Female</option>
+					</select>
+				</td>
+			</tr>
+		
+	
+	<tr>
+		<td class ='label_age'>Age</td>
+		<td><input type="number" class="text_input" name="age" required></td>
+	</tr>
+
+	<tr>
+		<td class ="label_sip">Sibsp</td>
+		<td>
+			<select name="sibsp" id="sibsp">
+  				<option value="sibsp1">0</option>
+  				<option value="sibsp2">1</option>  		
+			</select>
+		</td>
+	</tr>
+	
+	<tr>
+		<td class= "label_parch">Parch</td>
+		<td>
+			<select name="parch" id="parch">
+  				<option value="parch1">0</option>
+  				<option value="parch2">1</option>  		
+			</select>
+		</td>
+	</tr>
+	
+	<tr>
+		<td class ="label_fare">Fare</td>
+		<td><input class="text_input" type="text" name="Fare" required></td>
+
+	</tr>
+	
+	<tr>
+		<td class="label_em">Embarked</td>
+		<td>
+			<select name="embarked" id="embarked">
+  				<option value="embarked1">0</option>
+  				<option value="embarked2">1</option>  		
+			</select>
+		</td>
+
+
+	</table><br></br>
+
+
+	<button>Submit</button>
+</center>
+
+
+
+
+</form>
+</body>
+</html>
